@@ -1,0 +1,10 @@
+numpy>=1.24
+scipy>=1.10
+pyyaml>=6.0
+pandas>=1.5
+
+# Optional: for generating trajectory plots
+# matplotlib>=3.7
+
+# Optional: for running tests
+# pytest>=7.0
