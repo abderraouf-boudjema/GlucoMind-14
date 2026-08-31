@@ -177,7 +177,7 @@ MIT. See [LICENSE](LICENSE).
 If you use this software in research, please cite:
 
 > GlucoMind AI. *GlucoMind-14: A physiologically grounded glucose-insulin
-> simulator for Type 1 Diabetes.* 2026. https://github.com/glucofind-ai/GlucoMind14
+> simulator for Type 1 Diabetes.* 2026. https://github.com/abderraouf-boudjema/GlucoMind-14
 
 ## Disclaimer
 

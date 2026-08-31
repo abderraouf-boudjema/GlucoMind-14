@@ -51,8 +51,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/glucofind-ai/GlucoMind14"
-Documentation = "https://github.com/glucofind-ai/GlucoMind14#readme"
+Homepage = "https://github.com/abderraouf-boudjema/GlucoMind-14"
+Documentation = "https://github.com/abderraouf-boudjema/GlucoMind-14#readme"
 
 [tool.setuptools.packages.find]
 include = ["src*"]
