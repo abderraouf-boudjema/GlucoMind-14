@@ -181,5 +181,25 @@ If you use this software in research, please cite:
 
 ## Disclaimer
 
+## Known Limitations
+
+- **No hypoglycemic self-correction behavior.** The virtual population sampling
+  does not currently model patient corrective action in response to
+  hypoglycemia (e.g., corrective carbohydrate intake triggered by a low BGM
+  reading). As a result, the tail of a generated population (~5th percentile,
+  typically the most insulin-sensitive virtual patients) can show extended,
+  clinically implausible hypoglycemic episodes rather than the
+  self-terminating episodes seen in real patients. Users training downstream
+  models on population-level data should either filter these tail cases or
+  treat them as representing worst-case/untreated scenarios rather than
+  typical patient behavior.
+- **Plasma–interstitial lag is a fixed model constant**, not patient-specific
+  or empirically re-fit to CGM data beyond the original Dalla Man
+  parameterization. This is a known source of divergence between `Gp` and
+  `Gi` readings, most visible during rapid glucose excursions.
+- This is a **synthetic data generator**, not a validated clinical model. No
+  claims are made about accuracy against real patient cohorts; parameter
+  estimation and identifiability tools are provided for research use, not
+  clinical calibration.
 This is a simulation model for research and educational use. It is **not**
 a medical device and must not be used for clinical decision-making.
